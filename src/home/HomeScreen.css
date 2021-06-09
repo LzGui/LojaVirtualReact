@@ -1,0 +1,29 @@
+section {
+  display: flex;
+}
+
+section article {
+  flex-basis: 40%;
+  background: linear-gradient(aquamarine);
+  padding: 15px;
+  
+}
+
+section aside {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media (max-width: 900px) {
+  body {
+    width: auto;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 200px;
+  }
+}

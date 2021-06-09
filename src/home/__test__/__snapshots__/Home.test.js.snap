@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Validar fotografia da tela 1`] = `
+<div
+  data-testid="home-screen"
+>
+  <header
+    data-testid="main-header"
+  >
+    <img
+      alt="Logo"
+      src="logo.png"
+    />
+    <h1>
+      Loja Virtual
+    </h1>
+  </header>
+  <section>
+    <article>
+      <p
+        class="TextIntro"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in enim non voluptas, ducimus tenetur praesentium sequi et ut, laboriosam autem dolores reiciendis inventore atque eum. Libero placeat rerum dolor!
+      </p>
+    </article>
+    <aside />
+  </section>
+  <footer>
+    © COPYRIGHT 2021, INSTITUTO CULTURAL NEWTON PAIVA FERREIRA LTDA.
+  </footer>
+</div>
+`;

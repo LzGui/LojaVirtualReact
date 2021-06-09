@@ -1,0 +1,15 @@
+.menu {
+  margin: 0;
+  padding: 0;
+}
+
+.menuitem {
+  list-style-type: none;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  text-align: center;
+}
