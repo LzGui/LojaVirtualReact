@@ -2,7 +2,7 @@ import React from 'react'
 
 import './TabelaCompras.css'
 
-export default ({lista = []}) => (
+export default ({ lista = [] }) => (
   <table>
     <thead>
       <tr>
@@ -15,20 +15,20 @@ export default ({lista = []}) => (
       </tr>
     </thead>
     <tbody>
-    {
-      lista.map(l => 
-        <tr>
-          <td>
-            <img src={l.produto.img} alt={l.produto.nome}/>
-          </td>
-          <td>{l.nome}</td>
-          <td>{l.quantidade}</td>
-          <td>{l.preco}</td>
-          <td>{l.quantidade * l.produto.preco}</td>
-          <td><button>Remover</button></td>
-        </tr>
-      )
-    }
+      {
+        lista.map(l =>
+          <tr>
+            <td>
+              <img src={l.produto.img} alt={l.produto.nome} />
+            </td>
+            <td>{l.nome}</td>
+            <td>{l.quantidade}</td>
+            <td>{l.preco}</td>
+            <td>{l.quantidade * l.produto.preco}</td>
+            <td><button>Remover</button></td>
+          </tr>
+        )
+      }
     </tbody>
   </table>
 )

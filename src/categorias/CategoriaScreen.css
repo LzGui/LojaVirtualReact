@@ -1,11 +1,6 @@
 #root {
   display: grid;
-  grid-template-areas:
-   "header header header"
-   "nav nav nav"
-   "menu table table"
-   "footer footer footer";
-
+  grid-template-areas: "header header header" "nav nav nav" "menu table table" "footer footer footer";
   grid-column-gap: 30px;
 }
 
@@ -13,7 +8,7 @@ header {
   grid-area: header
 }
 
-header + nav {
+header+nav {
   height: 30px;
   padding: 20px;
   grid-area: nav;
@@ -21,7 +16,7 @@ header + nav {
   flex-direction: row-reverse;
 }
 
-nav + nav {
+nav+nav {
   grid-area: menu;
 }
 

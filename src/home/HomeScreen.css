@@ -6,7 +6,6 @@ section article {
   flex-basis: 40%;
   background: linear-gradient(aquamarine);
   padding: 15px;
-  
 }
 
 section aside {
@@ -20,7 +19,6 @@ section aside {
   body {
     width: auto;
   }
-
   section {
     display: flex;
     flex-direction: column;

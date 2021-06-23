@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
   BrowserRouter,
   Switch,
@@ -15,7 +15,7 @@ function App() {
   const adicionarProduto = (produto) => {
     let item = compras.find(c => c.produto.id === produto.id)
 
-    if(item) {
+    if (item) {
       item.quantidade = item.quantidade + 1
     } else {
       item = {
@@ -36,12 +36,12 @@ function App() {
           <HomeScreen />
         </Route>
         <Route path='/categorias/:id'>
-          <CategoriaScreen 
+          <CategoriaScreen
             addProduto={adicionarProduto}
           />
         </Route>
         <Route path='/compras'>
-          <ComprasScreen 
+          <ComprasScreen
             lista={compras}
           />
         </Route>

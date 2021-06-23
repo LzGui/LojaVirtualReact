@@ -1,5 +1,5 @@
 import React from 'react'
-import {MemoryRouter} from 'react-router-dom'
+import { MemoryRouter } from 'react-router-dom'
 import { render, wait } from '@testing-library/react'
 import HomeScreen from '../HomeScreen'
 import * as CategoriaApi from '../CategoriaApi'
@@ -22,7 +22,7 @@ test('API devolvendo 1 categoria', async () => {
         }]
     })
 
-    const { getByText } = render(<HomeScreen />, {wrapper: MemoryRouter})
+    const { getByText } = render(<HomeScreen />, { wrapper: MemoryRouter })
     await wait(() => getByText('Android Teste'))
 
     expect(getByText('Android Teste')).toBeInTheDocument()

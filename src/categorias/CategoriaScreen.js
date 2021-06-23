@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react'
-import {useParams, useHistory} from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import { useParams, useHistory } from 'react-router-dom'
 import Header from '../home/Header'
 import MenuCategorias from './MenuCategorias'
 import TabelaProdutos from './TabelaProdutos'
@@ -8,8 +8,8 @@ import * as CategoriaApi from '../home/CategoriaApi'
 import * as ProdutoApi from './ProdutoApi'
 import './CategoriaScreen.css'
 
-export default ({addProduto}) => {
-  const {id} = useParams()
+export default ({ addProduto }) => {
+  const { id } = useParams()
   const history = useHistory()
   const [listaCategorias, setListaCategorias] = useState([])
   const [listaProdutos, setListaProdutos] = useState([])
@@ -37,12 +37,12 @@ export default ({addProduto}) => {
         <button onClick={() => history.push('../compras/CategoriaScreen')}>Ver Carrinho</button>
       </nav>
       <nav>
-        <MenuCategorias 
+        <MenuCategorias
           lista={listaCategorias}
         />
       </nav>
       <aside>
-        <TabelaProdutos 
+        <TabelaProdutos
           idCategoria={id}
           lista={listaProdutos}
           addProduto={addProduto}

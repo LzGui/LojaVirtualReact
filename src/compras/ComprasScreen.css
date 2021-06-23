@@ -28,12 +28,12 @@
   padding: 20px;
 }
 
-.totalCompra span{
+.totalCompra span {
   font-family: roboto;
   font-size: 30px;
 }
 
-.totalCompra span:last-child{
+.totalCompra span:last-child {
   color: blueviolet;
   margin-left: 10px;
 }

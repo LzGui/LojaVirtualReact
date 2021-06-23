@@ -5,7 +5,7 @@ import TabelaCompras from './TabelaCompras'
 
 import './ComprasScreen.css'
 
-export default ({lista}) => {
+export default ({ lista }) => {
 
   return (
     <>
@@ -17,7 +17,7 @@ export default ({lista}) => {
       </nav>
       <div class="totalCompra">
         <span>Total da compra:</span>
-        <span>R$ [valor]</span>  
+        <span>R$ [valor]</span>
       </div>
       <TabelaCompras
         lista={lista}

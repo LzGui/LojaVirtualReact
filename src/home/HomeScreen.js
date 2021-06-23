@@ -1,4 +1,4 @@
-import React,  {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Header from './Header'
 import Footer from './Footer'
@@ -24,7 +24,7 @@ export default () => {
     const categorias = await CategoriaApi.getAll()
     setListaCategorias(categorias)
   }
- 
+
   return (
     <div data-testid='home-screen'>
       <Header />
@@ -34,7 +34,7 @@ export default () => {
         </article>
         <aside>
           {
-            listaCategorias.map(categ => 
+            listaCategorias.map(categ =>
               <Link to={'/categorias/' + categ.id}>
                 <CardCategoria
                   nome={categ.nome}
